@@ -21,7 +21,7 @@ def find_max(array, low, high):
     elif array[mid - 1] > array[mid] > array[mid + 1]:
         return find_max(array, low, mid - 1)
     else:
-        return find_max(array, mid+1, high)
+        return find_max(array, mid, high)
 
 
 if __name__ == '__main__':
